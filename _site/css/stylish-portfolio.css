@@ -149,7 +149,9 @@ hr.small {
 }
 
 /* Hiding parts of Zoho Confirmation */
-
+iframe .backgroundSecBg {
+  padding-top: 0px!important;
+}
 
 /* Header */
 
@@ -219,6 +221,11 @@ hr.small {
 
 .portfolio-item {
     margin-bottom: 30px;
+}
+
+.portfolio-item p {
+  font-size: 1.4em;
+  text-align: right;
 }
 
 .img-portfolio {

@@ -149,7 +149,9 @@ hr.small {
 }
 
 /* Hiding parts of Zoho Confirmation */
-
+iframe .backgroundSecBg {
+  padding-top: 0px!important;
+}
 
 /* Header */
 
