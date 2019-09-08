@@ -1,0 +1,38 @@
+# Site settings
+title: DINE
+email: dinedrc@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+# User setting
+owner: Divine Retreat Centre
+email: dinedrc@gmail.com
+facebook_username:
+twitter_username:
+github_username:
+address:
+  - line: St Augustines Abbey,
+  - line: Ramsgate CT11 9PA, UK
+  # Feel free to add more lines here 
+telephone:
+  - number: +60146999350 (🇲🇾 Malaysia)
+  - number: +421918477898 (🇸🇰 Slovakia)
+  - number: +6285102230222 (🇮🇩 Indonesia)
+  - number: +48575325965 (🇵🇱 Poland)
+  - number: +491724524306 (🇩🇪 Germany)
+  - number: +971502488603 (🇦🇪 UAE)
+  - number: +447513739532 (🇬🇧 UK)
+
+copyright:
+
+# API settings
+google_api_key:
+
+maps_embed_code: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2493.0315604144457!2d1.4078873158793765!3d51.3289393315565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47deacc800be2569%3A0x8cfc3bcf06b240d0!2sDivine%20Retreat%20Centre!5e0!3m2!1sen!2sde!4v1567241724253!5m2!1sen!2sde
+
+# Build settings
+markdown: kramdown
