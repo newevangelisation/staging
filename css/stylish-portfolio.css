@@ -223,6 +223,11 @@ iframe .backgroundSecBg {
     margin-bottom: 30px;
 }
 
+.portfolio-item p {
+  font-size: 1.4em;
+  text-align: right;
+}
+
 .img-portfolio {
     margin: 0 auto;
 }
