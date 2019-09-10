@@ -1,0 +1,26 @@
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <div class="col-lg-10 col-lg-offset-1 text-center">
+      <h2>Testimonials of Past Participants</h2>
+      <hr class="small">
+      {% for testimony in page.testimonies %}
+      <div class="row row-eq-height">
+        <div class="col-md-6">
+          <div class="portfolio-item">
+            <a href="#">
+              <img class="img-portfolio img-responsive" src="{{ testimony.image }}">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="portfolio-item">
+              <p>{{ testimony.text }}</p>
+              <p>{{ testimony.name }}, {{ testimony.country }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <a href="#" class="btn btn-dark">View More</a>
+    </div>
+  </div>
+</section>  
