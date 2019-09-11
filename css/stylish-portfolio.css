@@ -160,7 +160,7 @@ iframe .backgroundSecBg {
     position: relative;
     width: 100%;
     height: 50%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+    background: url(../img/bg.jpg) no-repeat top center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
