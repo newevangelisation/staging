@@ -2,9 +2,7 @@
 title: DINE
 email: dinedrc@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Divine Institute of New Evangelisation
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://dinedrc.org" # the base hostname & protocol for your site
 
@@ -16,7 +14,8 @@ twitter_username:
 github_username:
 address:
   - line: St Augustines Abbey,
-  - line: Ramsgate CT11 9PA, UK
+  - line: Ramsgate CT11 9PA
+  - line: United Kingdom
   # Feel free to add more lines here 
 telephone:
   - number: +60146999350 (🇲🇾 Malaysia)
@@ -27,7 +26,7 @@ telephone:
   - number: +971502488603 (🇦🇪 UAE)
   - number: +447513739532 (🇬🇧 UK)
 
-copyright: 2019
+copyright: 
 
 # API settings
 google_api_key:
