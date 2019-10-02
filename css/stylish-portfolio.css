@@ -6,6 +6,11 @@
 
 /* Global Styles */
 
+.bg-primary {
+  color: #fff;
+  background-color: #337ab7!important;
+}
+
 html,
 body {
     width: 100%;
