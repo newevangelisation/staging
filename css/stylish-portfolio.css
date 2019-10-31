@@ -6,6 +6,11 @@
 
 /* Global Styles */
 
+.bg-primary {
+  color: #fff;
+  background-color: #337ab7!important;
+}
+
 html,
 body {
     width: 100%;
@@ -234,6 +239,21 @@ iframe .backgroundSecBg {
 
 .img-portfolio:hover {
     opacity: 0.8;
+}
+
+.testimony-container {
+  padding-top: 30px;
+  padding-left: 45px;
+  padding-right: 15px;
+}
+
+#testimonies {
+  
+}
+
+#testimonies .carousel-control-prev, #testimonies .carousel-control-next {  
+  width: 2%;
+  filter: invert(100%);
 }
 
 /* Call to Action */
