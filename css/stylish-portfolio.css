@@ -241,6 +241,21 @@ iframe .backgroundSecBg {
     opacity: 0.8;
 }
 
+.testimony-container {
+  padding-top: 30px;
+  padding-left: 45px;
+  padding-right: 15px;
+}
+
+#testimonies {
+  
+}
+
+#testimonies .carousel-control-prev, #testimonies .carousel-control-next {  
+  width: 2%;
+  filter: invert(100%);
+}
+
 /* Call to Action */
 
 .call-to-action {
