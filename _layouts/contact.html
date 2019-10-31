@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+<body>
+
+  {% include navigation.html %}
+  
+  <section id="heading" class="heading">
+    <section id="history" class="bg-primary">
+      <div class="container">
+        <div class="col-lg-12 text-left">
+          <h1>{{page.title}}</h1>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="col-lg-12 text-left">
+        <br>
+        <h4><strong>{{ site.owner }}</strong></h4>
+        <p>
+          {% for address in site.address %}
+          {{ address.line }}<br>
+          {% endfor %}
+        </p> 
+        {% include map.html %}     
+        <p>
+          Divine Retreat Centre, St Augustine’s Abbey is located on the tranquil seaside shores of Ramsgate in Kent, to the south-east of London. You can travel to the centre using various modes of transport.
+        </p>
+        <ul class="list-unstyled">
+          {% for number in site.telephone %}
+          <li><i class="fa fa-phone fa-fw"></i> {{ number.number }}</li>
+          {% endfor %}
+        </ul>
+        <ul class="list-unstyled">
+          <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          </li>
+        </ul>    
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+    
+  {% include footer.html %}
+  {% include scripts.html %}
+  
+</body>
+
+</html>

@@ -6,6 +6,11 @@
 
 /* Global Styles */
 
+.bg-primary {
+  color: #fff;
+  background-color: #337ab7!important;
+}
+
 html,
 body {
     width: 100%;
@@ -159,8 +164,8 @@ iframe .backgroundSecBg {
     display: table;
     position: relative;
     width: 100%;
-    height: 50%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+    height: 60%;
+    background: url(../img/bg.jpg) no-repeat top center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -236,6 +241,26 @@ iframe .backgroundSecBg {
     opacity: 0.8;
 }
 
+.testimony-container {
+  padding-top: 30px;
+  padding-left: 45px;
+  padding-right: 15px;
+}
+
+#testimonies {
+  
+}
+
+#testimonies .carousel-control-prev, #testimonies .carousel-control-next {  
+  width: 2%;
+  filter: invert(100%);
+}
+
+#history {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
 /* Call to Action */
 
 .call-to-action {
@@ -244,6 +269,10 @@ iframe .backgroundSecBg {
 
 .call-to-action .btn {
     margin: 10px;
+}
+
+.secondary_title {
+  margin-top: 20px;
 }
 
 /* Map */
@@ -266,5 +295,5 @@ iframe .backgroundSecBg {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 40px 0;
 }
