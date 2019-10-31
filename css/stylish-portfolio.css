@@ -256,6 +256,11 @@ iframe .backgroundSecBg {
   filter: invert(100%);
 }
 
+#history {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
 /* Call to Action */
 
 .call-to-action {
@@ -264,6 +269,10 @@ iframe .backgroundSecBg {
 
 .call-to-action .btn {
     margin: 10px;
+}
+
+.secondary_title {
+  margin-top: 20px;
 }
 
 /* Map */
@@ -286,5 +295,5 @@ iframe .backgroundSecBg {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 40px 0;
 }

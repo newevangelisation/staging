@@ -12,7 +12,9 @@
   <title>DINE - Divine Institute of New Evangelization</title>
 
   <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.css" rel="stylesheet">
@@ -43,31 +45,68 @@
 
 <body>
 
-  <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-<nav id="sidebar-wrapper">
-  <ul class="sidebar-nav">
-    <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-    <li class="sidebar-brand">
-      <a href="#top"  onclick = $("#menu-close").click(); >DINE</a>
-    </li>
-    <li>
-      <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-    </li>
-    <!-- <li>
-      <a href="#about" onclick = $("#menu-close").click(); >About</a>
-    </li>
-    <li>
-      <a href="#services" onclick = $("#menu-close").click(); >Services</a>
-    </li>
-    <li>
-      <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-    </li>
-    <li>
-      <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
-    </li> -->
-  </ul>
-</nav>
-
+  <div class="bg-light">
+  <div class="container">
+    <div class="col-lg-12 col-lg-offset-1">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" width="60" height="30" class="d-inline-block align-top" alt="dine_logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            
+              <li class="nav-item active">
+                <a class="nav-link" href="/index">Home
+                  
+                    <span class="sr-only">(current)</span>
+                  
+                </a>
+              </li>
+            
+              <li class="nav-item ">
+                <a class="nav-link" href="/about">About
+                  
+                </a>
+              </li>
+            
+              <li class="nav-item ">
+                <a class="nav-link" href="/history">History
+                  
+                </a>
+              </li>
+            
+              <li class="nav-item ">
+                <a class="nav-link" href="/testimonials">Testimonials
+                  
+                </a>
+              </li>
+            
+              <li class="nav-item ">
+                <a class="nav-link" href="">Gallery
+                  
+                </a>
+              </li>
+            
+              <li class="nav-item ">
+                <a class="nav-link" href="/contact">Contact
+                  
+                </a>
+              </li>
+            
+            <li class="nav-item">
+              <a href="/apply-now">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Apply Now</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
   <header id="top" class="header">
   <div class="text-vertical-center">
     <img src="img/logo.png" id="logo_header"/>
@@ -93,46 +132,45 @@
   <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
 <section id="services" class="services bg-primary">
   <div class="container">
-    <div class="row text-center">
-      <div class="col-lg-10 col-lg-offset-1">
-        <h2>Want to know more?</h2>
-        <hr class="small">
-        <div class="row">
-          <div class="col-md-4 col-sm-6">
-            <div class="service-item">
-              <h4>
-                <strong>What is DINE?</strong>
-              </h4>
-              <p>A 14 Day Residential International Catholic School of Mission in Ramsgate, Kent, UK with speakers from around the world.</p>
-            </div>
+    <div class="col-lg-12 col-lg-offset-1 text-center">
+      <h2>Want to know more?</h2>
+      <hr class="small">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item">
+            <h4>
+              <strong>What is DINE?</strong>
+            </h4>
+            <p>A 14 Day Residential International Catholic School of Mission in Ramsgate, Kent, UK with speakers from around the world.</p>
           </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="service-item">
-              <h4>
-                <strong>Who should attend?</strong>
-              </h4>
-              <p>Anyone aged between 18 and 35yrs<br>
-                Excited about the Catholic Faith<br>
-                Wants to serve the Lord in Ministry<br> 
-                Looking for a cross-cultural exposure
-              </p>
-            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item">
+            <h4>
+              <strong>Who should attend?</strong>
+            </h4>
+            <p>Anyone aged between 18 and 35yrs<br>
+              Excited about the Catholic Faith<br>
+              Wants to serve the Lord in Ministry<br> 
+              Looking for a cross-cultural exposure
+            </p>
           </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="service-item">
-              <h4>
-                <strong>What to expect?</strong>
-              </h4>
-              <p>A divine experience, where you get to encounter God, and learn the tools you need to tell more people about God's love, and how it can change their lives.</p>
-            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item">
+            <h4>
+              <strong>What to expect?</strong>
+            </h4>
+            <p>A divine experience, where you get to encounter God, and learn the tools you need to tell more people about God's love, and how it can change their lives.</p>
           </div>
+        </div>
         <!-- /.row (nested) -->
       </div>
       <!-- /.col-lg-10 -->
+      <!-- /.row -->
     </div>
-    <!-- /.row -->
+    <!-- /.container -->
   </div>
-  <!-- /.container -->
 </section>
 
   <aside class="callout">
@@ -152,7 +190,7 @@
   <!-- /.row -->
 </div>
 <hr />
-<iframe frameborder="0" scrolling="no" style="height:740px;width:100%;border:none;" src='https://forms.zohopublic.eu/dinedrc/form/DineInterest/formperma/zGB2ZB4qWl-RwP7bVw-kNNLnz1R_khi1IR98Oo-p_KU'></iframe>
+<iframe frameborder="0" scrolling="no" style="height:750px;width:100%;border:none;" src='https://forms.zohopublic.eu/dinedrc/form/DineInterest/formperma/zGB2ZB4qWl-RwP7bVw-kNNLnz1R_khi1IR98Oo-p_KU'></iframe>
   <section class="bg-primary">
   <div class="container">
     <div class="row">
@@ -171,161 +209,167 @@
 </section>  
   <section id="portfolio" class="portfolio">
   <div class="container">
-    <div class="col-lg-10 col-lg-offset-1 text-center">
-      <h2>Testimonials of Past Participants</h2>
-      <hr class="small">
-      
-      <div class="row row-eq-height">
-        <div class="col-md-6">
-          <div class="portfolio-item">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/360154803"></iframe>
+    <div class="col-lg-12 col-lg-offset-1 text-center">
+      <div id="testimonies" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          
+          <div class="row row-eq-height carousel-item active">
+            <div class="container testimony-container">
+              <div class="row">
+                <div class="col-sm">
+                  <div class="portfolio-item">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/369976236"></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="portfolio-item">
+                    <p>..the most precious part for me is.. seeing the families who came from different countries.. for ONE MISSION, ONE HEART and ONE MIND and it made me realise that missionary can be done in a family context and.. will work in God’s Grace.</p>
+                    <p>Agnes, Malaysia</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="portfolio-item">
-              <p>“... God didn’t forget about me especially during personal prayer time.. He calls me to.. fight for His people through His love.. He spoke to me about some strategies to approach and reach out to.. care for His people.”</p>
-              <p>Jana, Slovakia</p>
+          
+          <div class="row row-eq-height carousel-item ">
+            <div class="container testimony-container">
+              <div class="row">
+                <div class="col-sm">
+                  <div class="portfolio-item">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/360154803"></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="portfolio-item">
+                    <p>“... God didn’t forget about me especially during personal prayer time.. He calls me to.. fight for His people through His love.. He spoke to me about some strategies to approach and reach out to.. care for His people.”</p>
+                    <p>Janka, Slovakia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          
+          <div class="row row-eq-height carousel-item ">
+            <div class="container testimony-container">
+              <div class="row">
+                <div class="col-sm">
+                  <div class="portfolio-item">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/370033527"></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="portfolio-item">
+                    <p>..there was a burning love in my heart.. but not enough.. to give to anyone. That’s when I heard about DINE, I accepted it.. We were taught to show love.. Now, the amount of fire I have inside cannot be contained...</p>
+                    <p>Mario, Germany</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row row-eq-height carousel-item ">
+            <div class="container testimony-container">
+              <div class="row">
+                <div class="col-sm">
+                  <div class="portfolio-item">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pd8oj9NYRls?rel=0"></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="portfolio-item">
+                    <p>We’ve got to meet so many spirit filled, talented people. We learnt so many things about ministry and evangelisation.. and literally see Jesus changing lives.. It’s really helped me personally develop new skills and gifts in my own music ministry.</p>
+                    <p>Shando, Germany</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row row-eq-height carousel-item ">
+            <div class="container testimony-container">
+              <div class="row">
+                <div class="col-sm">
+                  <div class="portfolio-item">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hqQYKkAIcGA?rel=0"></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="portfolio-item">
+                    <p>..on [outreach].. when I saw this man.. this emotion of him just transferred through his eyes to my eye.. My partner and I prayed and felt the sadness.. and for sure, God has already planted a seed inside his heart!...</p>
+                    <p>Leon, Germany</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row row-eq-height carousel-item ">
+            <div class="container testimony-container">
+              <div class="row">
+                <div class="col-sm">
+                  <div class="portfolio-item">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_TFbJTt429w?rel=0"></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="portfolio-item">
+                    <p>I met twelve different nations.. with the same heart, mind and desire to take God to this beautiful world.. and to these people that’s so desperate in search for.. God.. to fulfil their hearts and my heart as well.</p>
+                    <p>Jessica, Brazil</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row row-eq-height carousel-item ">
+            <div class="container testimony-container">
+              <div class="row">
+                <div class="col-sm">
+                  <div class="portfolio-item">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pJiK3SqW0fo?rel=0"></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="portfolio-item">
+                    <p>..this opportunity made me walk the talk! I went out spoke to people that were quite intimidating.. Speaking to them, I learnt that there are so many people suffering (inside) and if we don’t go and help them then who will?</p>
+                    <p>Darren, United Kingdom</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
+        <a class="carousel-control-prev" href="#testimonies" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#testimonies" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      
-      <!-- <a href="#" class="btn btn-dark">View More</a> -->
     </div>
-  </div>
-</section>  
+  </section>
   
-  <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-<section id="services" class="services bg-primary">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-lg-10 col-lg-offset-1">
-        <h2>Divine Retreat Center, UK</h2>
-        <hr class="small">
-        <!-- <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <div class="service-item">
-              <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-            </span>
-              <h4>
-                <strong>What is DINE?</strong>
-              </h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <a href="#" class="btn btn-light">Read More</a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="service-item">
-              <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-compass fa-stack-1x text-primary"></i>
-            </span>
-              <h4>
-                <strong>Service Name</strong>
-              </h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <a href="#" class="btn btn-light">Read More</a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="service-item">
-              <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-flask fa-stack-1x text-primary"></i>
-            </span>
-              <h4>
-                <strong>Service Name</strong>
-              </h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <a href="#" class="btn btn-light">Read More</a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="service-item">
-              <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-shield fa-stack-1x text-primary"></i>
-            </span>
-              <h4>
-                <strong>Service Name</strong>
-              </h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <a href="#" class="btn btn-light">Read More</a>
-            </div>
-          </div>
-        </div> -->
-        <!-- /.row (nested) -->
-      </div>
-      <!-- /.col-lg-10 -->
-    </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
-</section>
-
-  <section id="map" class="map">
-  <iframe id="map_iframe"
-    width="100%"
-    height="100%"
-    frameborder="0"
-    scrolling="no"
-    marginheight="0"
-    marginwidth="0"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2493.0315604144457!2d1.4078873158793765!3d51.3289393315565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47deacc800be2569%3A0x8cfc3bcf06b240d0!2sDivine%20Retreat%20Centre!5e0!3m2!1sen!2sde!4v1567241724253!5m2!1sen!2sde"
-    allowfullscreen>
-  </iframe>
-  <br>
-  <small id="map_iframe"
-    width="100%"
-    height="100%"
-    frameborder="0"
-    scrolling="no"
-    marginheight="0"
-    marginwidth="0"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2493.0315604144457!2d1.4078873158793765!3d51.3289393315565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47deacc800be2569%3A0x8cfc3bcf06b240d0!2sDivine%20Retreat%20Centre!5e0!3m2!1sen!2sde!4v1567241724253!5m2!1sen!2sde"
-    allowfullscreen>
-  </small>
-</section>
   <footer>
   <div class="container">
     <div class="row">
-      <div class="col-lg-10 col-lg-offset-1 text-center">
-        <h4><strong>Divine Retreat Centre</strong>
-        </h4>
-        <p>
-          
-          St Augustines Abbey,<br>
-          
-          Ramsgate CT11 9PA<br>
-          
-          United Kingdom<br>
-          
-        </p>
-        <ul class="list-unstyled">
-          
-          <li><i class="fa fa-phone fa-fw"></i> +60146999350 (🇲🇾 Malaysia)</li>
-          
-          <li><i class="fa fa-phone fa-fw"></i> +421918477898 (🇸🇰 Slovakia)</li>
-          
-          <li><i class="fa fa-phone fa-fw"></i> +6285102230222 (🇮🇩 Indonesia)</li>
-          
-          <li><i class="fa fa-phone fa-fw"></i> +48575325965 (🇵🇱 Poland)</li>
-          
-          <li><i class="fa fa-phone fa-fw"></i> +4915202635143 (🇩🇪 Germany)</li>
-          
-          <li><i class="fa fa-phone fa-fw"></i> +971502488603 (🇦🇪 UAE)</li>
-          
-          <li><i class="fa fa-phone fa-fw"></i> +447513739532 (🇬🇧 UK)</li>
-          
-        </ul>
-        <ul class="list-unstyled">
-          <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:dinedrc@gmail.com">dinedrc@gmail.com</a>
-          </li>
-        </ul>  
-        <br>
+      <div class="col-lg-12 col-lg-offset-1 text-center">
         <!-- <ul class="list-inline">
           <li>
             <a href="https://facebook.com/"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
@@ -338,21 +382,19 @@
           </li>
         </ul> -->
         <hr class="small">
-        <p class="text-muted">Copyright &copy;  2019</p>
+        <p class="text-muted">Copyright &copy; Divine UK 2019</p>
       </div>
     </div>
   </div>
 </footer>
 
-  <!-- jQuery -->
-<script src="js/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
 <script src="js/custom.js"></script> 
-
   
 </body>
 
