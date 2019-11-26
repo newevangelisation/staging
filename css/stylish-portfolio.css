@@ -4,6 +4,9 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+
 /* Global Styles */
 
 .bg-primary {
@@ -33,11 +36,22 @@ body {
     z-index: 2;
 }
 
+.overlay-black:hover {
+    background: rgba(0,0,0,0.10);
+}
+
 .caption {
     position: absolute;
     top: 45%;
     left: 0;
     width: 100%;
+}
+
+@media(max-width:768px) {
+    .service-item .card img {
+        height: 200px;
+        object-fit: cover;
+    }
 }
 
 .card-title {
@@ -56,6 +70,10 @@ body {
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
+}
+
+.bible-passage {
+    font-family: 'EB Garamond', serif;
 }
 
 .service-item:hover {
@@ -227,13 +245,16 @@ iframe .backgroundSecBg {
 /* About */
 
 .about {
-    padding: 50px 0;
+    padding-top: 40px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
 }
 
 /* Services */
 
 .services {
-    padding-top: 0px;
+    padding-top: 10px;
     padding-right: 0px;
     padding-bottom: 50px;
     padding-left: 0px;    
