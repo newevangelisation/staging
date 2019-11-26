@@ -41,9 +41,6 @@ page_list:
       name: Testimonials
       url: /testimonials
   - page:
-      name: Gallery
-      url: #
-  - page:
       name: Contact
       url: /contact
 
@@ -54,4 +51,3 @@ maps_embed_code: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2493.0315
 
 # Build settings
 markdown: kramdown
-            </li>
