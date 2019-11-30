@@ -5,44 +5,59 @@
 
 <body>
 
-  {% include navigation.html %}  
-  <section id="heading" class="heading">
-    <section id="history" class="bg-primary">
-      <div class="container">
-        <div class="col-lg-12 text-left">
-          <h5>{{page.title}}</h5>
-        </div>
-      </div>
-    </section>
-    <div class="container secondary_title">
-      <div class="col-lg-12">
-        <h3>Testimonials from DINE 2019</h3>
-      </div>
-    </div>
-    {% for testimony in page.testimonies %}
-    <div class="container testimony-container">
-      <div class="row">
-        <div class="col-sm">
-          <div class="portfolio-item">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="{{ testimony.video }}"></iframe>
+    {% include navigation.html %}
+    <section id="heading" class="heading">
+        <section id="history" class="bg-primary">
+            <div class="container">
+                <div class="col-lg-12 text-left">
+                    <h5>{{page.title}}</h5>
+                </div>
             </div>
-          </div>
+        </section>
+        <div class="container secondary_title">
+            <div class="col-lg-12">
+                <h3>Testimonials from DINE 2019</h3>
+            </div>
         </div>
-        <div class="col-sm">
-          <div class="portfolio-item">
-            <p>{{ testimony.text }}</p>
-            <p>{{ testimony.name }}, {{ testimony.country }}</p>
-          </div>
+        <div class="container">
+            <ul class="nav nav-tabs" id="country-list" role="tablist">
+                {% for country in page.testimonies %}
+                <li class="nav-item">
+                    <a class="nav-link" id="{{ country.country }}-tab" data-toggle="tab" href="#{{ country.country }}-content" role="tab" aria-controls="{{ country.country }}-content" aria-selected="true">{{ country.country }}</a>
+                </li>
+                {% endfor %}
+            </ul>            
+            <div class="tab-content" id="myTabContent">
+                {% for country in page.testimonies %}
+                <div class="tab-pane fade" id="{{ country.country }}-content" role="tabpanel" aria-labelledby="{{ country.country }}-tab">
+                    {% for testimony in country.content %}
+                    <div class="container testimony-container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="portfolio-item">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="{{ testimony.video }}"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="portfolio-item">
+                                    <p>{{ testimony.text }}</p>
+                                    <p>{{ testimony.name }}, {{ testimony.country }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+            </div>
         </div>
-      </div>
-    </div>
-    {% endfor %}
-    <!-- /.container -->
-  </section>
+        <!-- /.container -->
+    </section>
   
-  {% include footer.html %}
-  {% include scripts.html %}
+    {% include footer.html %}
+    {% include scripts.html %}
   
 </body>
 
