@@ -23,13 +23,13 @@
             <ul class="nav nav-tabs" id="country-list" role="tablist">
                 {% for country in page.testimonies %}
                 <li class="nav-item">
-                    <a class="nav-link" id="{{ country.country }}-tab" data-toggle="tab" href="#{{ country.country }}-content" role="tab" aria-controls="{{ country.country }}-content" aria-selected="true">{{ country.country }}</a>
+                    <a class="nav-link {{country.status}}" id="{{ country.country }}-tab" data-toggle="tab" href="#{{ country.country }}-content" role="tab" aria-controls="{{ country.country }}-content" aria-selected="true">{{ country.country }}</a>
                 </li>
                 {% endfor %}
             </ul>            
             <div class="tab-content" id="myTabContent">
                 {% for country in page.testimonies %}
-                <div class="tab-pane fade" id="{{ country.country }}-content" role="tabpanel" aria-labelledby="{{ country.country }}-tab">
+                <div class="tab-pane fade {{country.show}} {{country.status}}" id="{{ country.country }}-content" role="tabpanel" aria-labelledby="{{ country.country }}-tab">
                     {% for testimony in country.content %}
                     <div class="container testimony-container">
                         <div class="row">
