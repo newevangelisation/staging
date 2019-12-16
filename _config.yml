@@ -38,8 +38,8 @@ page_list:
       name: History
       url: /history
   - page:
-      name: Testimonials
-      url: /testimonials
+      name: Testimonies
+      url: /testimonies
   - page:
       name: Contact
       url: /contact
