@@ -1,5 +1,5 @@
 <section data-featherlight-gallery data-featherlight-filter="a">
-    {% for i in (1..31) %}
-        <a href="{{page.contents.image.path}}/{{i}}.jpg"><img src="{{page.contents.image.thumb}}/{{i}}.jpg" /></a>
+    {% for i in (1..{{page.contents.image.count}}) %}
+        <a href="{{page.contents.image.path}}/{{i}}.jpg"><img src="{{page.contents.image.thumbs}}/{{i}}.jpg" /></a>
     {% endfor %}
 </section>    
