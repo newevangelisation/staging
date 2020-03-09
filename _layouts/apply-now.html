@@ -7,7 +7,13 @@
 
   {% include navigation.html %}
   {% include page_header.html %}
-  {% include interest_form.html %}
+  {% if page.type == "interest" %}
+      {% include interest_form.html %}
+  {% elsif page.type == "application" %}
+      {% include application_form.html %}
+  {% elsif page.type == "reference" %}
+      {% include reference_form.html %}
+  {% endif %}
   {% include footer.html %}
   {% include scripts.html %}
   
