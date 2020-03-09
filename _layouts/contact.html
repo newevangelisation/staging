@@ -17,26 +17,54 @@
     </section>
     <div class="container">
       <div class="col-lg-12 text-left">
-        <br>
+        <br/>
+        <h4><strong>Divine Institute of New Evangelization</strong></h4>        
+        <ul class="list-unstyled">
+          <li>For questions or inquiries about DINE <i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          </li>
+        </ul>
+        <p>Alternatively, you can call us on the following numbers, depending on the country you are applying from</p>
+        <ul class="list-unstyled">
+          {% for number in site.telephone %}
+          <li><i class="fa fa-phone fa-fw"></i> {{ number.number }}</li>
+          {% endfor %}
+        </ul>    
+        <br/>
         <h4><strong>{{ site.owner }}</strong></h4>
         <p>
           {% for address in site.address %}
           {{ address.line }}<br>
           {% endfor %}
         </p> 
-        {% include map.html %}     
+        {% include map.html %}          
+        <br>   
+        <h4><strong>Getting There</strong></h4>
         <p>
           Divine Retreat Centre, St Augustine’s Abbey is located on the tranquil seaside shores of Ramsgate in Kent, to the south-east of London. You can travel to the centre using various modes of transport.
-        </p>
+        </p>        
         <ul class="list-unstyled">
-          {% for number in site.telephone %}
-          <li><i class="fa fa-phone fa-fw"></i> {{ number.number }}</li>
-          {% endfor %}
-        </ul>
-        <ul class="list-unstyled">
-          <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-          </li>
-        </ul>    
+            <li><h5><i class="fa fa-plane fa-fw"></i> Flight</h5></li>
+            <ul>
+                <li>The closest international airports to the Divine Retreat Centre are based in London (London Gatwick and London Heathrow).</li>
+                <li>For domestic or if flying from Europe, other London airports can also be used (London Luton is discouraged as it is the furthest away from the Divine Retreat Centre).</li>        
+            </ul>
+            <br>
+            <li><h5><i class="fa fa-train fa-fw"></i> Train</h5></li>
+            <ul>
+                <li>There are frequent trains operated by Southeastern Railway from London terminals to Ramsgate. Tickets can be purchased online on <a href="https://www.southeasternrailway.co.uk">https://www.southeasternrailway.co.uk</a> or <a href="https://www.thetrainline.com/">https://www.thetrainline.com/</a></li>
+                <li>The centre is a 15-20 minute walk from the station, or alternatively, you can take a taxi or bus (please alight at St. Augustine’s Abbey).</li>
+            </ul>
+            <br>
+            <li><h5><i class="fa fa-bus fa-fw"></i> Local Bus in Ramsgate - Thanet Loop</h5></li>
+            <ul>
+                <li>The Thanet Loop is the most regular service which can take you from the railway station to the harbour side.</li>
+                <li>Other bus routes around Ramsgate include Number 9, Number 33/34, Number 34X, Number 38, Number 39, Number 42, Number 87/88.</li>
+            </ul>
+            <br>
+            <li><h5><i class="fa fa-car fa-fw"></i> By Car - From London</h5></li>
+            <ul>
+                <li>From London, the quickest route is via M2 with an average journey time of two hours.</li>
+            </ul>
       </div>
     </div>
     <!-- /.container -->
